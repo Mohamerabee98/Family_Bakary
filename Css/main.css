@@ -1,0 +1,531 @@
+body {
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  /* container for all sections*/
+  .container {
+    width: 80%;
+    margin: auto;
+  }
+  
+  /* end container*/
+  /*==================================*/
+  /* float clear for all sections*/
+  .clrfix {
+    clear: both;
+  }
+  
+  /*end clear float*/
+  
+  /*==================================*/
+  
+  /* start font */
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: Alegreya;
+  }
+  
+  h1 {
+    font-size: 70px;
+  }
+  
+  body {
+    font-family: Alegreya Sans;
+  }
+  
+  /*end font*/
+  
+  /*==================================*/
+  /*start nav*/
+ /* General Styles */
+ .nav-bar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    padding: 15px 0;
+}
+
+.nav-logo {
+    float: left;
+}
+
+.nav-logo img {
+    width: 170px;
+}
+
+.nav-list {
+    float: right;
+}
+
+.nav-list li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Toggle Button */
+.nav-toggle {
+    display: none;
+    cursor: pointer;
+    float: right;
+}
+
+.nav-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-list {
+        display: none;
+        width: 100%;
+        background-color: #403D38;
+        position: absolute;
+        top: 60px;
+        right: 0;
+    }
+
+    .nav-list ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-list li {
+        margin: 10px 0;
+    }
+
+    .nav-list.show {
+        display: block;
+    }
+}
+
+  /*end nav*/
+  
+  /*==================================*/
+  
+  /* start header*/
+  .header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/header.jpg);
+    margin-bottom: 30px;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .info {
+    position: absolute;
+    font-size: larger;
+    top: 30%;
+    left: 30%;
+    color: white;
+    text-align: center;
+  }
+  
+  .Learn,
+  .contact-us {
+   border: none;
+   background-color: #6482AD;
+   color:white;
+   padding: 10px 20px;
+   border-radius: 10px;
+   transition: all 0.5s ease;
+  
+  }
+  #btn-color:hover{
+    background-color:#2162bd
+  }
+
+ 
+  
+  /*end header*/
+  
+  /*==================================*/
+  
+  /* start section who we ara*/
+  .who-we-are {
+    margin-top: 30px;
+  }
+  
+  .who-we-are-img,
+  .who-we-are-info {
+    width: 50%;
+    float: left;
+  }
+  
+  .who-we-are-info h2 {
+    margin: 30px 0px;
+  }
+  
+  .who-we-are-img img {
+    width: 90%;
+  }
+  
+  .who-we-are li {
+    list-style-type: none;
+  }
+  
+  li img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  li img,
+  li span {
+    vertical-align: middle;
+  }
+  
+  /* end section who we ara*/
+  /*==================================*/
+  
+  .Our-location {
+    margin-top: 30px;
+}
+
+/* Images and Info Sections */
+.location-img,
+.location-info {
+    width: 50%;
+    float: right;
+}
+
+.location-info {
+    margin-top: 40px;
+}
+
+.Our-location img {
+    width: 90%;
+    margin: 40px;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    .location-img,
+    .location-info {
+        width: 100%;
+        float: none;
+        text-align: center; /* Center the content */
+    }
+
+    .Our-location img {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .location-info {
+        margin-top: 20px;
+        padding: 0 10px; /* Add padding for smaller screens */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .Our-location img {
+        width: 100%; /* Full width for very small screens */
+        margin: 10px auto;
+    }
+
+    .location-info {
+        font-size: 14px; /* Adjust font size */
+        padding: 0 5px;
+    }
+}
+
+  
+  /*====================================*/
+  /* start OurBaking  */
+  .OurBaking {
+    text-align: center;
+  }
+  
+  .bake-item {
+    float: left;
+    width: 33.333%;
+  }
+  
+  .OurBaking img {
+    width: 90%;
+  }
+  
+  /* end OurBaking  */
+  /*==================================*/
+  
+  /* start info*/
+  
+  .info-img img {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .info-img,
+  .contact {
+    width: 50%;
+    float: right;
+  }
+  
+  .contact {
+    margin-top: 40px;
+  }
+  
+  .container ul {
+    list-style-type: none;
+    margin: 0px 0px;
+    padding: 0px 0px;
+  }
+  
+  .container li,
+  span {
+    vertical-align: middle;
+  }
+  
+  .contact-info .container ul li {
+    margin-bottom: 20px;
+  }
+  
+  /* end info*/
+  
+  /*==================================*/
+  
+  /*start footer-section1*/
+  
+  .Footer-info li {
+    list-style-type: none;
+    color: darkgray;
+  }
+  
+  .Footer-info {
+    width: 100%;
+    margin-top: 40px;
+    background-color: #403d38;
+    padding: 20px;
+  }
+  
+  .Footer-info h3 {
+    color: white;
+  }
+  
+  .Footer-info p {
+    color: darkgray;
+  }
+  
+  .footer-about {
+    width: 24%;
+    float: left;
+    margin-right: 10px;
+    padding: 0px;
+  }
+  
+  .footer-about p {
+    margin: 10px;
+  }
+  
+  /*end footer-section1*
+  /*==================================*/
+  
+  /*start footer section2*/
+  
+  .footer-connection {
+    margin-top: 15px;
+    text-align: center;
+    color: darkgray;
+    background-color: #353330;
+  }
+  
+  .footer-links img {
+    width: 30px;
+  }
+  
+  .Bakery-footer {
+    margin-bottom: 25px;
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /*end footer section2*/
+  
+  /* Responsive Design */
+  @media only screen and (max-width: 1200px) {
+    .who-we-are-img,
+    .who-we-are-info,
+    .info-img,
+    .contact {
+      width: 100%;
+      float: none;
+      margin: 20px 0;
+    }
+  
+    .who-we-are-img img,
+ 
+    .OurBaking img,
+    .info-img img {
+      width: 100%;
+    }
+  
+    .footer-about {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .footer-connection {
+      text-align: center;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+  
+   
+  
+    /* Header adjustments */
+    .info {
+      top: 20%;
+      left: 10%;
+      right: 10%;
+      font-size: 16px;
+    }
+  
+    /* Who We Are section */
+    .who-we-are-info h2 {
+      font-size: 24px;
+      text-align: center;
+    }
+  
+    .who-we-are li {
+      text-align: center;
+    }
+  
+    /* Baking items */
+    .bake-item {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    /* Smaller Screens */
+  
+    .info {
+      font-size: 14px;
+      text-align: center;
+    }
+  
+    h1 {
+      font-size: 36px;
+    }
+  
+    .footer-about p {
+      font-size: 14px;
+    }
+  
+    .OurBaking img {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .who-we-are-img, .who-we-are-info,
+  
+    .bake-item {
+        width: 100%;
+        float: none;
+    }
+
+    .footer-about {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    
+
+
+    .info {
+        top: 25%;
+        left: 10%;
+        right: 10%;
+        font-size: 18px;
+    }
+
+    .OurBaking img {
+        width: 100%;
+    }
+
+    .footer-about p {
+        font-size: 14px;
+    }
+    
+
+      
+      
+}
+
+@media (max-width: 480px) {
+  
+    h1 {
+        font-size: 36px;
+    }
+
+    .info {
+        font-size: 14px;
+    }
+
+    .footer-about p {
+        font-size: 12px;
+    }
+}
+
+
+/* Back to Top Button Styles */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #403D38;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none; /* Hidden by default */
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#back-to-top:hover {
+    background-color: #555;
+    transform: scale(1.1);
+}
+
